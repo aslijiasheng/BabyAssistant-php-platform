@@ -4,24 +4,29 @@ namespace frontend\controllers;
 use Yii;
 use yii\rest\Controller;
 use frontendBo\BabyBo;
-use frontend\models\BabyUserForm;
+use frontend\beans\BabyUserForm;
+use frontend\lib\helper\SessionHelper;
 
 class UserController extends Controller
 {
+
     public function actionIndex()
     {
-        // $babyBo = new frontendBo\BabyBo();
+        $babyBo = new BabyBo();
+        $babyFormToken = $babyBo->generateToken();
         // \Yii::error('basket error', 'basket');
-        $this->renderView('home');
+        $this->renderView('home', $babyFormToken);
     }
 
     public function actionInfo(){
         $ret = array('succ' => TRUE, 'message' => NULL, 'data' => array());
-        $model = new BabyUserForm();
-        $model->load(['BabyUserForm' => Yii::$app->request->post()]);
-        if (!$model->validate()) {
+        $babyUserForm = new BabyUserForm();
+        $babyUserForm->load(['BabyUserForm' => Yii::$app->request->post()]);
+        if (!$babyUserForm->validate()) {
             // validation failed: $errors is an array containing error messages
-            $errors = $model->errors;
+            $errors = $babyUserForm->errors;
+            var_dump($errors);
+            exit;
             $this->renderView('home/reiver', $ret);
         }
 
