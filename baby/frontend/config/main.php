@@ -13,7 +13,6 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'defaultRoute' => 'user',
-
     'components' => [
         'db' => [
             'class' => '\yii\db\Connection',
