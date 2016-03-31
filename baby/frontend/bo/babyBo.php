@@ -35,9 +35,16 @@ class BabyBo{
         /*
          * 获取回性别 年龄 星座  生肖 生日
          * get 出年龄的分析结果 当前年龄段的分析结果
+         * get出当前年龄  不符则return 3001 年龄超标
+         * 符合后 开始对数据进行拉取  通过es将babyAgent/baby_age/{age} 获取专家分析数据
+         * 符合后 开始对数据进行拉取  通过es将babyAgent/baby_book/{age} 获取建议书籍数据
+         * 符合后 开始对数据进行拉取  通过es将babyAgent/baby_goods/{age} 获取建议商品数据
+         * get出当前星座 进行性格分析
+         * 符合后 开始对数据进行拉取  通过es将babyAgent/baby_constellation/{age} 获取星座数据
+         * get出当前生肖 进行性格分析
+         * 符合后 开始对数据进行拉取  通过es将babyAgent/baby_lunar/{age} 获取生肖数据
          */
         $babyUserInfo = BabyUserInfoDao::getUserInfo($idCardDatas['age']);
-        \Yii::error('basket error', 'basket');
         exit;
 
     }

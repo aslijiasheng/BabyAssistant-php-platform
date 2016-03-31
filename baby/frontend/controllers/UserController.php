@@ -14,7 +14,6 @@ class UserController extends Controller
     {
         $babyBo = new BabyBo();
         $babyFormToken = $babyBo->generateToken();
-        // \Yii::error('basket error', 'basket');
         $this->renderView('home', $babyFormToken);
     }
 

@@ -1,93 +1,41 @@
 <?php
 namespace frontend\lib\helper;
 
-/**
- * Class RandomStringGenerator
- * @package Helper
- *
- */
+use Yii;
+
 class Logger{
-    /** @var string */
-    protected $alphabet;
 
-    /** @var int */
-    protected $alphabetLength;
+    private static $_logType = null;
 
+    private static $_instance = null;
 
-    /**
-     * @param string $alphabet
-     */
-    public function __construct($alphabet = '')
-    {
-        if ('' !== $alphabet) {
-            $this->setAlphabet($alphabet);
-        } else {
-            $this->setAlphabet(
-                  implode(range('a', 'z'))
-                . implode(range('A', 'Z'))
-                . implode(range(0, 9))
-            );
-        }
+    public function init($logType = ''){
+        // \Yii::error('basket error', 'basket');
+        if(!self::$_logType)
+            self::$_logType = $logType;
+        return self::getInstance();
     }
 
-    /**
-     * @param string $alphabet
-     */
-    public function setAlphabet($alphabet)
-    {
-        $this->alphabet = $alphabet;
-        $this->alphabetLength = strlen($alphabet);
+    public static function getInstance(){
+        if (self::$_instance === null) {
+            self::$_instance = new self;
+        }
+        return self::$_instance;
     }
 
-    /**
-     * @param int $length
-     * @return string
-     */
-    public function generate($length)
-    {
-        $token = '';
-
-        for ($i = 0; $i < $length; $i++) {
-            $randomKey = $this->getRandomInteger(0, $this->alphabetLength);
-            $token .= $this->alphabet[$randomKey];
-        }
-
-        return $token;
+    public function error($value){
+        \Yii::error(var_export($value), self::$_logType);
     }
 
-    /**
-     * @param int $min
-     * @param int $max
-     * @return int
-     */
-    protected function getRandomInteger($min, $max)
-    {
-        $range = ($max - $min);
+    public function warning($value){
+        \Yii::warning(var_export($value), self::$_logType);
+    }
 
-        if ($range < 0) {
-            // Not so random...
-            return $min;
-        }
+    public function debug($value){
+        \Yii::debug(var_export($value), self::$_logType);
+    }
 
-        $log = log($range, 2);
-
-        // Length in bytes.
-        $bytes = (int) ($log / 8) + 1;
-
-        // Length in bits.
-        $bits = (int) $log + 1;
-
-        // Set all lower bits to 1.
-        $filter = (int) (1 << $bits) - 1;
-
-        do {
-            $rnd = hexdec(bin2hex(openssl_random_pseudo_bytes($bytes)));
-
-            // Discard irrelevant bits.
-            $rnd = $rnd & $filter;
-
-        } while ($rnd >= $range);
-
-        return ($min + $rnd);
+    public function info($value){
+        \Yii::info(var_export($value), self::$_logType);
     }
 }
