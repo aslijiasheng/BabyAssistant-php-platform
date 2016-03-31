@@ -10,8 +10,8 @@ class TokenFormValidator extends Validator{
     public $other;
 
     public function validateAttribute($model, $attribute){
-        if (($model->{$this->other}) == SessionHelper::init()->get('babyFormToken')){
-            $this->addError($model, $attribute, 'baby form token Inconsistent!');
+        if (($model->{$this->other}) != SessionHelper::init()->get('babyFormToken')){
+            $this->addError($model, $attribute, '令牌验证不通过!');
         }
     }
 

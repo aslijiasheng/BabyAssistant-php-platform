@@ -20,18 +20,17 @@ class UserController extends Controller
 
     public function actionInfo(){
         $ret = array('succ' => TRUE, 'message' => NULL, 'data' => array());
+        $babyBo = new BabyBo();
         $babyUserForm = new BabyUserForm();
         $babyUserForm->load(['BabyUserForm' => Yii::$app->request->post()]);
         if (!$babyUserForm->validate()) {
-            // validation failed: $errors is an array containing error messages
-            $errors = $babyUserForm->errors;
-            var_dump($errors);
-            exit;
+            $babyFormToken = $babyBo->generateToken();
+            $ret['data']['token'] = $babyFormToken;
+            $ret['succ'] = false;
+            $ret['message'] = $babyUserForm->errors();
             $this->renderView('home/reiver', $ret);
         }
-
-        $babyBo = new BabyBo();
-        $ret = $babyBo->userInfo();
+        $ret = $babyBo->userInfo($babyUserForm);
         $this->renderView('home/reiver', $ret);
     }
 

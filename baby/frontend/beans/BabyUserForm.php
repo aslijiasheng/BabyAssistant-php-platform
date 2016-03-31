@@ -42,4 +42,13 @@ class BabyUserForm extends Model
         ];
     }
 
+    public function errors(){
+        $msg = "";
+        $errors = $this->errors;
+        foreach($errors as $key => $value){
+            $msg .= $value[0];
+        }
+        return $msg;
+    }
+
 }
