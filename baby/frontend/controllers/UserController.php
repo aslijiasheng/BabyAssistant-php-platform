@@ -6,12 +6,24 @@ use yii\rest\Controller;
 use frontendBo\BabyBo;
 use frontend\beans\BabyUserForm;
 use frontend\lib\helper\SessionHelper;
+use frontend\models\es\Customer;
 
-class UserController extends Controller
-{
+class UserController extends Controller{
 
-    public function actionIndex()
-    {
+    public function actionIndex(){
+        // $db = ActiveRecord::getDb();
+        // // delete index
+        // if ($db->createCommand()->indexExists('yiitest')) {
+            // $db->createCommand()->deleteIndex('yiitest');
+        // }
+        // $db->createCommand()->createIndex('yiitest');
+        // $command = $db->createCommand();
+        // Customer::setUpMapping($command);
+        $customer = new Customer();
+        $customer->id = 1;
+        $customer->setAttributes(['email' => 'user1@example.com', 'name' => 'user1', 'address' => 'address1', 'status' => 1], false);
+        $customer->insert();
+        exit;
         $babyBo = new BabyBo();
         $babyFormToken = $babyBo->generateToken();
         $this->renderView('home', $babyFormToken);

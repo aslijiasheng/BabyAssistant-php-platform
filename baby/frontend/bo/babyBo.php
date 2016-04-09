@@ -4,6 +4,7 @@ namespace frontendBo;
 use Yii;
 use frontend\lib\helper\RandomStringGenerator;
 use frontend\lib\helper\SessionHelper;
+use frontend\lib\helper\CacheHelper;
 use frontend\lib\helper\IDCardHelper;
 use frontend\beans\BabyUserForm;
 use frontend\models\dao\BabyUserInfoDao;
@@ -26,7 +27,7 @@ class BabyBo{
 
         // Call method to generate random string.
         $token['babyFormToken'] = $generator->generate($tokenLength);
-        SessionHelper::init()->set('babyFormToken', $token['babyFormToken']);
+        CacheHelper::init()->set('babyFormToken', $token['babyFormToken']);
         return $token;
     }
 

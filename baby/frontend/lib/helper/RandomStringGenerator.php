@@ -6,8 +6,8 @@ namespace frontend\lib\helper;
  * @package Helper
  *
  */
-class RandomStringGenerator
-{
+class RandomStringGenerator{
+
     /** @var string */
     protected $alphabet;
 

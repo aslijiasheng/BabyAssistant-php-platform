@@ -14,12 +14,29 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'defaultRoute' => 'user',
     'components' => [
+        'elasticsearch' => [
+            'class' => 'yii\elasticsearch\Connection',
+            'nodes' => [
+                ['http_address' => '172.28.128.3:9200'],
+                // configure more hosts if you have a cluster
+            ],
+        ],
         'db' => [
             'class' => '\yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=BabyAssistant',
             'username' => 'root',
             'password' => '871027',
             'charset' => 'utf8',
+        ],
+        'cache' => [
+            'class' => '\yii\caching\MemCache',
+            'servers' => [
+                [
+                    'host' => '127.0.0.1',
+                    'port' => 11211,
+                    'weight' => 100,
+                ],
+            ],
         ],
         'user' => [
             'identityClass' => 'common\models\User',
