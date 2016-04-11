@@ -3,9 +3,10 @@ namespace frontend\controllers;
 
 use Yii;
 use yii\rest\Controller;
-use frontendBo\BabyBo;
+use frontend\bo\BabyBo;
 use frontend\beans\BabyUserForm;
-use frontend\lib\helper\SessionHelper;
+use common\lib\helper\SessionHelper;
+use common\lib\helper\ConsoleLogger;
 use frontend\models\es\Customer;
 
 class UserController extends Controller{
@@ -19,11 +20,10 @@ class UserController extends Controller{
         // $db->createCommand()->createIndex('yiitest');
         // $command = $db->createCommand();
         // Customer::setUpMapping($command);
-        $customer = new Customer();
-        $customer->id = 1;
-        $customer->setAttributes(['email' => 'user1@example.com', 'name' => 'user1', 'address' => 'address1', 'status' => 1], false);
-        $customer->insert();
-        exit;
+        // $customer = new Customer();
+        // $customer->id = 1;
+        // $customer->setAttributes(['email' => 'user1@example.com', 'name' => 'user1', 'address' => 'address1', 'status' => 1], false);
+        // $customer->insert();
         $babyBo = new BabyBo();
         $babyFormToken = $babyBo->generateToken();
         $this->renderView('home', $babyFormToken);

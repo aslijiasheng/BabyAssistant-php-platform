@@ -2,8 +2,8 @@
 namespace frontend\bo;
 
 use Yii;
-use frontend\lib\helper\ImageHelper;
-use frontend\lib\helper\SessionHelper;
+use common\lib\helper\ImageHelper;
+use common\lib\helper\SessionHelper;
 
 class ImageBo{
 

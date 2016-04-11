@@ -1,13 +1,13 @@
 <?php
-namespace frontendBo;
+namespace frontend\bo;
 
 use Yii;
-use frontend\lib\helper\RandomStringGenerator;
-use frontend\lib\helper\SessionHelper;
-use frontend\lib\helper\CacheHelper;
-use frontend\lib\helper\IDCardHelper;
-use frontend\beans\BabyUserForm;
-use frontend\models\dao\BabyUserInfoDao;
+use common\lib\helper\RandomStringGenerator;
+use common\lib\helper\SessionHelper;
+use common\lib\helper\CacheHelper;
+use common\lib\helper\IDCardHelper;
+use common\beans\BabyUserForm;
+use common\models\dao\BabyUserInfoDao;
 use app\config\code\Error;
 
 class BabyBo{

@@ -3,7 +3,7 @@ namespace frontend\components\validators;
 
 use Yii;
 use yii\validators\Validator;
-use frontend\lib\helper\CacheHelper;
+use common\lib\helper\CacheHelper;
 
 class TokenFormValidator extends Validator{
 
