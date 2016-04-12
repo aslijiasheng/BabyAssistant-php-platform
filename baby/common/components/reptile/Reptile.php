@@ -1,6 +1,6 @@
 <?php
-namespace common\components\reptiles;
-use common\components\reptiles\BaseReptile;
+namespace common\components\reptile;
+use common\components\reptile\BaseReptile;
 /**
  * simple html dom parser
  * Paperg - in the find routine: allow us to specify that we want case insensitive testing of the value of the selector.

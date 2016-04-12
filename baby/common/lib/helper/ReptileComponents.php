@@ -1,6 +1,7 @@
 <?php
 namespace common\lib\helper;
 use common\components\reptile\Reptile;
+use common\lib\helper\CurlHelper;
 
 class ReptileComponents{
 
@@ -12,7 +13,9 @@ class ReptileComponents{
         // We DO force the tags to be terminated.
         $dom = new Reptile(null, $lowercase, $forceTagsClosed, $target_charset, $stripRN, $defaultBRText, $defaultSpanText);
         // For sourceforge users: uncomment the next line and comment the retreive_url_contents line 2 lines down if it is not already done.
-        $contents = file_get_contents($url, $use_include_path, $context, $offset);
+        $curl = new CurlHelper();
+        $contents = $curl->post($url, array());
+        // $contents = file_get_contents($url, $use_include_path, $context, $offset);
         // Paperg - use our own mechanism for getting the contents as we want to control the timeout.
         //$contents = retrieve_url_contents($url);
         if (empty($contents) || strlen($contents) > MAX_FILE_SIZE)

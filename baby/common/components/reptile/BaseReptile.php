@@ -1,5 +1,5 @@
 <?php
-namespace common\components\reptiles;
+namespace common\components\reptile;
 
 /**
  * simple html dom node

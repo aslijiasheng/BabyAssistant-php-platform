@@ -5,8 +5,7 @@ use Yii;
 use yii\rest\Controller;
 use frontend\bo\ImageBo;
 
-class ImageController extends Controller
-{
+class ImageController extends Controller{
 
     public function actionValidata(){
         $imageBo = new ImageBo();
