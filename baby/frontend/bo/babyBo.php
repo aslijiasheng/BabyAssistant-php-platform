@@ -6,8 +6,8 @@ use common\lib\helper\RandomStringGenerator;
 use common\lib\helper\SessionHelper;
 use common\lib\helper\CacheHelper;
 use common\lib\helper\IDCardHelper;
-use common\beans\BabyUserForm;
-use common\models\dao\BabyUserInfoDao;
+use frontend\beans\BabyUserForm;
+use frontend\models\dao\BabyUserInfoDao;
 use app\config\code\Error;
 
 class BabyBo{
@@ -27,8 +27,9 @@ class BabyBo{
 
         // Call method to generate random string.
         $token['babyFormToken'] = $generator->generate($tokenLength);
-        CacheHelper::init()->set('babyFormToken', $token['babyFormToken']);
-        return $token;
+        $secret=md5(uniqid(rand(), true));
+        CacheHelper::init()->set($secret, $token['babyFormToken']);
+        return ['token' => $token['babyFormToken'], 'secret' => $secret];
     }
 
     public function userInfo(BabyUserForm $babyUserForm){

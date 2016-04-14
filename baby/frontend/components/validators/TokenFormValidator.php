@@ -10,9 +10,11 @@ class TokenFormValidator extends Validator{
     public $other;
 
     public function validateAttribute($model, $attribute){
-        if (($model->{$this->other}) != CacheHelper::init()->get('babyFormToken')){
+
+        if (($model->{$attribute}) != CacheHelper::init()->get(($model->{$this->other}))){
             $this->addError($model, $attribute, '令牌验证不通过!');
         }
+
     }
 
 }

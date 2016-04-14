@@ -21,7 +21,7 @@ class UserController extends Controller{
         // $command = $db->createCommand();
         // Customer::setUpMapping($command);
         // $customer = new Customer();
-        // $customer->id = 1;
+        // $customer->id = 2;
         // $customer->setAttributes(['email' => 'user1@example.com', 'name' => 'user1', 'address' => 'address1', 'status' => 1], false);
         // $customer->insert();
         $babyBo = new BabyBo();
@@ -36,7 +36,7 @@ class UserController extends Controller{
         $babyUserForm->load(['BabyUserForm' => Yii::$app->request->post()]);
         if (!$babyUserForm->validate()) {
             $babyFormToken = $babyBo->generateToken();
-            $ret['data']['token'] = $babyFormToken;
+            $ret['data'] = $babyFormToken;
             $ret['succ'] = false;
             $ret['message'] = $babyUserForm->errors();
             $this->renderView('home/reiver', $ret);
