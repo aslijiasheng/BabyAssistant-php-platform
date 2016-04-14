@@ -1,0 +1,240 @@
+2016-04-03 21:32:37 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Connection.php:600
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Connection.php(600): PDO->__construct('mysql:host=loca...', 'root', '871027', NULL)
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Connection.php(858): yii\db\Connection->open()
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Connection.php(845): yii\db\Connection->getMasterPdo()
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Command.php(834): yii\db\Command->prepare(true)
+#6 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('users111')
+#10 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Connection.php(731): yii\db\Schema->getTableSchema('users111', true)
+#11 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2-gii/generators/model/Generator.php(609): yii\db\Connection->getTableSchema('users111', true)
+#12 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2-gii/generators/model/Generator.php(565): yii\gii\generators\model\Generator->getTableNames()
+#13 [internal function]: yii\gii\generators\model\Generator->validateTableName('tableName', NULL)
+#14 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/validators/InlineValidator.php(69): call_user_func(Array, 'tableName', NULL)
+#15 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/validators/Validator.php(243): yii\validators\InlineValidator->validateAttribute(Object(yii\gii\generators\model\Generator), 'tableName')
+#16 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Model.php(356): yii\validators\Validator->validateAttributes(Object(yii\gii\generators\model\Generator), Array)
+#17 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2-gii/console/GenerateAction.php(34): yii\base\Model->validate()
+#18 [internal function]: yii\gii\console\GenerateAction->run()
+#19 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Action.php(92): call_user_func_array(Array, Array)
+#20 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\Action->runWithParams(Array)
+#21 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction('model', Array)
+#22 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('model', Array)
+#23 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('gii/model', Array)
+#24 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('gii/model', Array)
+#25 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#26 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#27 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Connection.php:547
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Connection.php(858): yii\db\Connection->open()
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Connection.php(845): yii\db\Connection->getMasterPdo()
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Command.php(834): yii\db\Command->prepare(true)
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('users111')
+#8 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/db/Connection.php(731): yii\db\Schema->getTableSchema('users111', true)
+#9 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2-gii/generators/model/Generator.php(609): yii\db\Connection->getTableSchema('users111', true)
+#10 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2-gii/generators/model/Generator.php(565): yii\gii\generators\model\Generator->getTableNames()
+#11 [internal function]: yii\gii\generators\model\Generator->validateTableName('tableName', NULL)
+#12 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/validators/InlineValidator.php(69): call_user_func(Array, 'tableName', NULL)
+#13 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/validators/Validator.php(243): yii\validators\InlineValidator->validateAttribute(Object(yii\gii\generators\model\Generator), 'tableName')
+#14 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Model.php(356): yii\validators\Validator->validateAttributes(Object(yii\gii\generators\model\Generator), Array)
+#15 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2-gii/console/GenerateAction.php(34): yii\base\Model->validate()
+#16 [internal function]: yii\gii\console\GenerateAction->run()
+#17 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Action.php(92): call_user_func_array(Array, Array)
+#18 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\Action->runWithParams(Array)
+#19 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction('model', Array)
+#20 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('model', Array)
+#21 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('gii/model', Array)
+#22 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('gii/model', Array)
+#23 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#24 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#25 {main}
+Additional Information:
+
+2016-04-03 21:32:37 [-][-][-][info][application] $_SERVER = [
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.fhQ20kKmYc/Listeners'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.4N4CMEnpbP/Render'
+    'COLORFGBG' => '12;8'
+    'ITERM_PROFILE' => 'jason'
+    'XPC_FLAGS' => '0x0'
+    'LANG' => 'zh_CN.UTF-8'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SHELL' => '/bin/zsh'
+    'SECURITYSESSIONID' => '186a8'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'COMMAND_MODE' => 'unix2003'
+    'TERM' => 'xterm-256color'
+    'HOME' => '/Users/sky'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'USER' => 'sky'
+    'XPC_SERVICE_NAME' => '0'
+    'LOGNAME' => 'sky'
+    'ITERM_SESSION_ID' => 'w0t2p1:E909CAC5-48D9-406B-A822-D5AFF8F49D24'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'SHLVL' => '1'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    'AUTOJUMP_SOURCED' => '1'
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'GOPATH' => '/Users/sky/go'
+    'DOCKER_TLS_VERIFY' => '1'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'DOCKER_MACHINE_NAME' => 'default'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'EDITOR' => 'nvim'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    '_' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1459690357.836
+    'REQUEST_TIME' => 1459690357
+    'argv' => [
+        0 => './yii'
+        1 => 'gii/model'
+        2 => '--tableName=users111'
+        3 => '--modelClass=user111'
+    ]
+    'argc' => 4
+]
+2016-04-03 22:03:12 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Unknown option: --to' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php:104
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('Mail', Array)
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('test/Mail', Array)
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('test/Mail', Array)
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#5 {main}
+2016-04-03 22:03:12 [-][-][-][info][application] $_SERVER = [
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.fhQ20kKmYc/Listeners'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.4N4CMEnpbP/Render'
+    'COLORFGBG' => '12;8'
+    'ITERM_PROFILE' => 'jason'
+    'XPC_FLAGS' => '0x0'
+    'LANG' => 'zh_CN.UTF-8'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SHELL' => '/bin/zsh'
+    'SECURITYSESSIONID' => '186a8'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'COMMAND_MODE' => 'unix2003'
+    'TERM' => 'xterm-256color'
+    'HOME' => '/Users/sky'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'USER' => 'sky'
+    'XPC_SERVICE_NAME' => '0'
+    'LOGNAME' => 'sky'
+    'ITERM_SESSION_ID' => 'w0t2p1:4B27D332-2144-479E-B99A-14664B74641D'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'SHLVL' => '1'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    'AUTOJUMP_SOURCED' => '1'
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'GOPATH' => '/Users/sky/go'
+    'DOCKER_TLS_VERIFY' => '1'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'DOCKER_MACHINE_NAME' => 'default'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'EDITOR' => 'nvim'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    '_' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1459692192.6764
+    'REQUEST_TIME' => 1459692192
+    'argv' => [
+        0 => './yii'
+        1 => 'test/Mail'
+        2 => '--to=hemctest@gmail.com'
+    ]
+    'argc' => 3
+]
+2016-04-03 22:05:03 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Unknown option: --to' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php:104
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('mail', Array)
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('test/mail', Array)
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('test/mail', Array)
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#5 {main}
+2016-04-03 22:05:03 [-][-][-][info][application] $_SERVER = [
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.fhQ20kKmYc/Listeners'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.4N4CMEnpbP/Render'
+    'COLORFGBG' => '12;8'
+    'ITERM_PROFILE' => 'jason'
+    'XPC_FLAGS' => '0x0'
+    'LANG' => 'zh_CN.UTF-8'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SHELL' => '/bin/zsh'
+    'SECURITYSESSIONID' => '186a8'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'COMMAND_MODE' => 'unix2003'
+    'TERM' => 'xterm-256color'
+    'HOME' => '/Users/sky'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'USER' => 'sky'
+    'XPC_SERVICE_NAME' => '0'
+    'LOGNAME' => 'sky'
+    'ITERM_SESSION_ID' => 'w0t2p1:4B27D332-2144-479E-B99A-14664B74641D'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'SHLVL' => '1'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    'AUTOJUMP_SOURCED' => '1'
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'GOPATH' => '/Users/sky/go'
+    'DOCKER_TLS_VERIFY' => '1'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'DOCKER_MACHINE_NAME' => 'default'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'EDITOR' => 'nvim'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1459692303.3407
+    'REQUEST_TIME' => 1459692303
+    'argv' => [
+        0 => './yii'
+        1 => 'test/mail'
+        2 => '--to=hemctest@gmail.com'
+    ]
+    'argc' => 3
+]
