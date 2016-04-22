@@ -6,11 +6,11 @@
 >---
 - **[Introduction](#introduction)**
 - **[Rely](#rely)**
-- **[Configuration][#Configuration]**
+- **[Configuration](#configuration)**
     - **[nginx.conf](#configuration)**
 - **[Usage](#usage)**
     - **[PHP-Server](#usage)**
-- **[question]**
+- **[Question](question)**
 
 >---
 
