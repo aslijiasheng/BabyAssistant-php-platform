@@ -1,5 +1,6 @@
 # BabyAssistant-php-platform
 
+[![Gitter](https://badges.gitter.im/aslijiasheng/BabyAssistant-php-platform.svg)](https://gitter.im/aslijiasheng/BabyAssistant-php-platform?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 ![Supported PHP versions: 5.5 .. 7.0](https://img.shields.io/badge/php-5.5~7.0-blue.svg)
 
 >---
