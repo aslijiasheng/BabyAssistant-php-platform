@@ -1,7 +1,10 @@
 # BabyAssistant-php-platform
+[![Build Status](https://travis-ci.org/aslijiasheng/BabyAssistant-php-platform.svg?branch=master)](https://travis-ci.org/aslijiasheng/BabyAssistant-php-platform)
+![Supported PHP versions: 5.5 .. 7.0](https://img.shields.io/badge/php-5.5~7.0-blue.svg)
 
-
+>---
 - **[Introduction](#introduction)**
+- **[Rely](#rely)**
 - **[Usage](#usage)**
     - **[Node-Server](#Node-Server)**
     - **[PHP-Server](#PHP-Server)**
