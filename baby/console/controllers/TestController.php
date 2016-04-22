@@ -13,6 +13,13 @@ class TestController extends Controller {
         echo "cron service runnning";
     }
  
+    /**
+     * actionMail 
+     * php ./yii test/mail [--to="hemctest@gmail.com"]
+     * @param mixed $to 
+     * @access public
+     * @return void
+     */
     public function actionMail($to) {
         echo "Sending mail to " . $to;
     }
