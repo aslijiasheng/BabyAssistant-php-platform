@@ -1,14 +1,10 @@
 # BabyAssistant-php-platform
-[![Build Status](https://travis-ci.org/hprose/hprose-php.svg?branch=master)](https://travis-ci.org/hprose/hprose-php)
-![Supported PHP versions: 5.3 .. 7.0](https://img.shields.io/badge/php-5.3~7.0-blue.svg)
-[![Packagist](https://img.shields.io/packagist/v/hprose/hprose.svg)](https://packagist.org/packages/hprose/hprose)
-[![Packagist Download](https://img.shields.io/packagist/dm/hprose/hprose.svg)](https://packagist.org/packages/hprose/hprose)
-[![License](https://img.shields.io/packagist/l/hprose/hprose.svg)](https://packagist.org/packages/hprose/hprose)
 
->---
+
 - **[Introduction](#introduction)**
 - **[Usage](#usage)**
-    - **[Web](#server)**
+    - **[Node-Server](#Node-Server)**
+    - **[PHP-Server](#PHP-Server)**
 
 >---
 
