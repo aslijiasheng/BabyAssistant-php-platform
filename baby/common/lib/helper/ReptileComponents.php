@@ -14,7 +14,7 @@ class ReptileComponents{
         $dom = new Reptile(null, $lowercase, $forceTagsClosed, $target_charset, $stripRN, $defaultBRText, $defaultSpanText);
         // For sourceforge users: uncomment the next line and comment the retreive_url_contents line 2 lines down if it is not already done.
         $curl = new CurlHelper();
-        $contents = $curl->post($url, array());
+        $contents = $curl->post($url, array("data"=>"yaf是傻叉", "d"=>"鑫鑫是傻叉", "c"=>"我是天才"));
         // $contents = file_get_contents($url, $use_include_path, $context, $offset);
         // Paperg - use our own mechanism for getting the contents as we want to control the timeout.
         //$contents = retrieve_url_contents($url);

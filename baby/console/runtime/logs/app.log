@@ -238,3 +238,809 @@ Stack trace:
     ]
     'argc' => 3
 ]
+2016-04-27 14:48:30 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: craw/gateway' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction('gateway', Array)
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('gateway', Array)
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('craw/gateway', Array)
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('craw/gateway', Array)
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#6 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "craw/gateway".' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php:169
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('craw/gateway', Array)
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#3 {main}
+2016-04-27 14:48:30 [-][-][-][info][application] $_SERVER = [
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'AUTOJUMP_SOURCED' => '1'
+    'SHELL' => '/bin/zsh'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'USER' => 'sky'
+    'DOCKER_MACHINE_NAME' => 'default'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'DOCKER_TLS_VERIFY' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'HOME' => '/Users/sky'
+    'ITERM_SESSION_ID' => 'w0t0p1:6BD92C1A-0345-4E5C-9B2D-9BB7AAB76F89'
+    'LOGNAME' => 'sky'
+    'GOPATH' => '/Users/sky/go'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'EVENT_NOKQUEUE' => '1'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.uqDshwbNTC/Render'
+    'COLORFGBG' => '12;8'
+    'COMMAND_MODE' => 'unix2003'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'EDITOR' => 'nvim'
+    'ITERM_PROFILE' => 'jason'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LESS' => '-R'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'MANPATH' => '/usr/local/opt/coreutils/libexec/gnuman:/usr/share/man:/usr/local/share/man:/usr/local/opt/coreutils/libexec/gnuman'
+    'PAGER' => 'less'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SECURITYSESSIONID' => '186a7'
+    'SHLVL' => '3'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.SZOuqjzNy6/Listeners'
+    'TERM' => 'screen-256color'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'TMUX' => '/private/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/tmux-501/default,24366,0'
+    'TMUXPWD_0' => '/Library/WebServer/Documents/skypro/ksbdlyy/ksbdlyy'
+    'TMUXPWD_1' => '/Library/WebServer/Documents/skypro/python/crawl/tutorial'
+    'TMUXPWD_2' => '/Library/WebServer/Documents'
+    'TMUXPWD_3' => '/Library/WebServer/Documents'
+    'TMUXPWD_4' => '/Library/WebServer/Documents'
+    'TMUXPWD_5' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'TMUXPWD_6' => '/Library/WebServer/Documents/skypro/douban_house'
+    'TMUXPWD_7' => '/Library/WebServer/Documents/BabyAssistant-node/baby/baby'
+    'TMUX_PANE' => '%8'
+    'TMUX_PLUGIN_MANAGER_PATH' => '/Users/sky/.tmux/plugins/'
+    'XPC_SERVICE_NAME' => '0'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1461739710.5999
+    'REQUEST_TIME' => 1461739710
+    'argv' => [
+        0 => './yii'
+        1 => 'craw/gateway'
+        2 => '[--way=onetofive]'
+    ]
+    'argc' => 3
+]
+2016-04-27 14:48:34 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: craw/gateWay' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction('gateWay', Array)
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('gateWay', Array)
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('craw/gateWay', Array)
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('craw/gateWay', Array)
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#6 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "craw/gateWay".' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php:169
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('craw/gateWay', Array)
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#3 {main}
+2016-04-27 14:48:34 [-][-][-][info][application] $_SERVER = [
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'AUTOJUMP_SOURCED' => '1'
+    'SHELL' => '/bin/zsh'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'USER' => 'sky'
+    'DOCKER_MACHINE_NAME' => 'default'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'DOCKER_TLS_VERIFY' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'HOME' => '/Users/sky'
+    'ITERM_SESSION_ID' => 'w0t0p1:6BD92C1A-0345-4E5C-9B2D-9BB7AAB76F89'
+    'LOGNAME' => 'sky'
+    'GOPATH' => '/Users/sky/go'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'EVENT_NOKQUEUE' => '1'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.uqDshwbNTC/Render'
+    'COLORFGBG' => '12;8'
+    'COMMAND_MODE' => 'unix2003'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'EDITOR' => 'nvim'
+    'ITERM_PROFILE' => 'jason'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LESS' => '-R'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'MANPATH' => '/usr/local/opt/coreutils/libexec/gnuman:/usr/share/man:/usr/local/share/man:/usr/local/opt/coreutils/libexec/gnuman'
+    'PAGER' => 'less'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SECURITYSESSIONID' => '186a7'
+    'SHLVL' => '3'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.SZOuqjzNy6/Listeners'
+    'TERM' => 'screen-256color'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'TMUX' => '/private/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/tmux-501/default,24366,0'
+    'TMUXPWD_0' => '/Library/WebServer/Documents/skypro/ksbdlyy/ksbdlyy'
+    'TMUXPWD_1' => '/Library/WebServer/Documents/skypro/python/crawl/tutorial'
+    'TMUXPWD_2' => '/Library/WebServer/Documents'
+    'TMUXPWD_3' => '/Library/WebServer/Documents'
+    'TMUXPWD_4' => '/Library/WebServer/Documents'
+    'TMUXPWD_5' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'TMUXPWD_6' => '/Library/WebServer/Documents/skypro/douban_house'
+    'TMUXPWD_7' => '/Library/WebServer/Documents/BabyAssistant-node/baby/baby'
+    'TMUX_PANE' => '%8'
+    'TMUX_PLUGIN_MANAGER_PATH' => '/Users/sky/.tmux/plugins/'
+    'XPC_SERVICE_NAME' => '0'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1461739714.9597
+    'REQUEST_TIME' => 1461739714
+    'argv' => [
+        0 => './yii'
+        1 => 'craw/gateWay'
+        2 => '[--way=onetofive]'
+    ]
+    'argc' => 3
+]
+2016-04-27 14:48:48 [-][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: console\controllers\CrawController::[--way=onetofive]()' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/console/controllers/CrawController.php(11): yii\base\Component->__call('[--way=onetofiv...', Array)
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/console/controllers/CrawController.php(11): console\controllers\CrawController->[--way=onetofive]()
+#2 [internal function]: console\controllers\CrawController->actionGateway('[--way=onetofiv...')
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction('gateway', Array)
+#6 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('gateway', Array)
+#7 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('craw/gateway', Array)
+#8 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('craw/gateway', Array)
+#9 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#11 {main}
+2016-04-27 14:48:48 [-][-][-][info][application] $_SERVER = [
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'AUTOJUMP_SOURCED' => '1'
+    'SHELL' => '/bin/zsh'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'USER' => 'sky'
+    'DOCKER_MACHINE_NAME' => 'default'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'DOCKER_TLS_VERIFY' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'HOME' => '/Users/sky'
+    'ITERM_SESSION_ID' => 'w0t0p1:6BD92C1A-0345-4E5C-9B2D-9BB7AAB76F89'
+    'LOGNAME' => 'sky'
+    'GOPATH' => '/Users/sky/go'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'EVENT_NOKQUEUE' => '1'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.uqDshwbNTC/Render'
+    'COLORFGBG' => '12;8'
+    'COMMAND_MODE' => 'unix2003'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'EDITOR' => 'nvim'
+    'ITERM_PROFILE' => 'jason'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LESS' => '-R'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'MANPATH' => '/usr/local/opt/coreutils/libexec/gnuman:/usr/share/man:/usr/local/share/man:/usr/local/opt/coreutils/libexec/gnuman'
+    'PAGER' => 'less'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SECURITYSESSIONID' => '186a7'
+    'SHLVL' => '3'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.SZOuqjzNy6/Listeners'
+    'TERM' => 'screen-256color'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'TMUX' => '/private/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/tmux-501/default,24366,0'
+    'TMUXPWD_0' => '/Library/WebServer/Documents/skypro/ksbdlyy/ksbdlyy'
+    'TMUXPWD_1' => '/Library/WebServer/Documents/skypro/python/crawl/tutorial'
+    'TMUXPWD_2' => '/Library/WebServer/Documents'
+    'TMUXPWD_3' => '/Library/WebServer/Documents'
+    'TMUXPWD_4' => '/Library/WebServer/Documents'
+    'TMUXPWD_5' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'TMUXPWD_6' => '/Library/WebServer/Documents/skypro/douban_house'
+    'TMUXPWD_7' => '/Library/WebServer/Documents/BabyAssistant-node/baby/baby'
+    'TMUX_PANE' => '%8'
+    'TMUX_PLUGIN_MANAGER_PATH' => '/Users/sky/.tmux/plugins/'
+    'XPC_SERVICE_NAME' => '0'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1461739728.7969
+    'REQUEST_TIME' => 1461739728
+    'argv' => [
+        0 => './yii'
+        1 => 'craw/gateway'
+        2 => '[--way=onetofive]'
+    ]
+    'argc' => 3
+]
+2016-04-27 14:50:10 [-][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: console\controllers\CrawController::[--way=onetofive]()' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/console/controllers/CrawController.php(12): yii\base\Component->__call('[--way=onetofiv...', Array)
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/console/controllers/CrawController.php(12): console\controllers\CrawController->[--way=onetofive]()
+#2 [internal function]: console\controllers\CrawController->actionGateway('[--way=onetofiv...')
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction('gateway', Array)
+#6 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('gateway', Array)
+#7 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('craw/gateway', Array)
+#8 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('craw/gateway', Array)
+#9 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#11 {main}
+2016-04-27 14:50:10 [-][-][-][info][application] $_SERVER = [
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'AUTOJUMP_SOURCED' => '1'
+    'SHELL' => '/bin/zsh'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'USER' => 'sky'
+    'DOCKER_MACHINE_NAME' => 'default'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'DOCKER_TLS_VERIFY' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'HOME' => '/Users/sky'
+    'ITERM_SESSION_ID' => 'w0t0p1:6BD92C1A-0345-4E5C-9B2D-9BB7AAB76F89'
+    'LOGNAME' => 'sky'
+    'GOPATH' => '/Users/sky/go'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'EVENT_NOKQUEUE' => '1'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.uqDshwbNTC/Render'
+    'COLORFGBG' => '12;8'
+    'COMMAND_MODE' => 'unix2003'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'EDITOR' => 'nvim'
+    'ITERM_PROFILE' => 'jason'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LESS' => '-R'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'MANPATH' => '/usr/local/opt/coreutils/libexec/gnuman:/usr/share/man:/usr/local/share/man:/usr/local/opt/coreutils/libexec/gnuman'
+    'PAGER' => 'less'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SECURITYSESSIONID' => '186a7'
+    'SHLVL' => '3'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.SZOuqjzNy6/Listeners'
+    'TERM' => 'screen-256color'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'TMUX' => '/private/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/tmux-501/default,24366,0'
+    'TMUXPWD_0' => '/Library/WebServer/Documents/skypro/ksbdlyy/ksbdlyy'
+    'TMUXPWD_1' => '/Library/WebServer/Documents/skypro/python/crawl/tutorial'
+    'TMUXPWD_2' => '/Library/WebServer/Documents'
+    'TMUXPWD_3' => '/Library/WebServer/Documents'
+    'TMUXPWD_4' => '/Library/WebServer/Documents'
+    'TMUXPWD_5' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'TMUXPWD_6' => '/Library/WebServer/Documents/skypro/douban_house'
+    'TMUXPWD_7' => '/Library/WebServer/Documents/BabyAssistant-node/baby/baby'
+    'TMUX_PANE' => '%8'
+    'TMUX_PLUGIN_MANAGER_PATH' => '/Users/sky/.tmux/plugins/'
+    'XPC_SERVICE_NAME' => '0'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1461739810.7315
+    'REQUEST_TIME' => 1461739810
+    'argv' => [
+        0 => './yii'
+        1 => 'craw/gateway'
+        2 => '[--way=onetofive]'
+    ]
+    'argc' => 3
+]
+2016-04-27 14:51:24 [-][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: console\controllers\CrawController::[--way=onetofive]()' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/console/controllers/CrawController.php(19): yii\base\Component->__call('[--way=onetofiv...', Array)
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/console/controllers/CrawController.php(19): console\controllers\CrawController->[--way=onetofive]()
+#2 [internal function]: console\controllers\CrawController->actionGateway('[--way=onetofiv...')
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction('gateway', Array)
+#6 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('gateway', Array)
+#7 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('craw/gateway', Array)
+#8 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('craw/gateway', Array)
+#9 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#11 {main}
+2016-04-27 14:51:24 [-][-][-][info][application] $_SERVER = [
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'AUTOJUMP_SOURCED' => '1'
+    'SHELL' => '/bin/zsh'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'USER' => 'sky'
+    'DOCKER_MACHINE_NAME' => 'default'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'DOCKER_TLS_VERIFY' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'HOME' => '/Users/sky'
+    'ITERM_SESSION_ID' => 'w0t0p1:6BD92C1A-0345-4E5C-9B2D-9BB7AAB76F89'
+    'LOGNAME' => 'sky'
+    'GOPATH' => '/Users/sky/go'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'EVENT_NOKQUEUE' => '1'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.uqDshwbNTC/Render'
+    'COLORFGBG' => '12;8'
+    'COMMAND_MODE' => 'unix2003'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'EDITOR' => 'nvim'
+    'ITERM_PROFILE' => 'jason'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LESS' => '-R'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'MANPATH' => '/usr/local/opt/coreutils/libexec/gnuman:/usr/share/man:/usr/local/share/man:/usr/local/opt/coreutils/libexec/gnuman'
+    'PAGER' => 'less'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SECURITYSESSIONID' => '186a7'
+    'SHLVL' => '3'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.SZOuqjzNy6/Listeners'
+    'TERM' => 'screen-256color'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'TMUX' => '/private/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/tmux-501/default,24366,0'
+    'TMUXPWD_0' => '/Library/WebServer/Documents/skypro/ksbdlyy/ksbdlyy'
+    'TMUXPWD_1' => '/Library/WebServer/Documents/skypro/python/crawl/tutorial'
+    'TMUXPWD_2' => '/Library/WebServer/Documents'
+    'TMUXPWD_3' => '/Library/WebServer/Documents'
+    'TMUXPWD_4' => '/Library/WebServer/Documents'
+    'TMUXPWD_5' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'TMUXPWD_6' => '/Library/WebServer/Documents/skypro/douban_house'
+    'TMUXPWD_7' => '/Library/WebServer/Documents/BabyAssistant-node/baby/baby'
+    'TMUX_PANE' => '%8'
+    'TMUX_PLUGIN_MANAGER_PATH' => '/Users/sky/.tmux/plugins/'
+    'XPC_SERVICE_NAME' => '0'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1461739884.6893
+    'REQUEST_TIME' => 1461739884
+    'argv' => [
+        0 => './yii'
+        1 => 'craw/gateway'
+        2 => '[--way=onetofive]'
+    ]
+    'argc' => 3
+]
+2016-04-27 14:52:01 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'console\controllers\Yii' not found' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/console/controllers/CrawController.php:34
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): console\controllers\CrawController->actionGateway()
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction()
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction()
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction()
+#6 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction()
+#7 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest()
+#8 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#9 {main}
+2016-04-27 14:52:01 [-][-][-][info][application] $_SERVER = [
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'AUTOJUMP_SOURCED' => '1'
+    'SHELL' => '/bin/zsh'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'USER' => 'sky'
+    'DOCKER_MACHINE_NAME' => 'default'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'DOCKER_TLS_VERIFY' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'HOME' => '/Users/sky'
+    'ITERM_SESSION_ID' => 'w0t0p1:6BD92C1A-0345-4E5C-9B2D-9BB7AAB76F89'
+    'LOGNAME' => 'sky'
+    'GOPATH' => '/Users/sky/go'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'EVENT_NOKQUEUE' => '1'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.uqDshwbNTC/Render'
+    'COLORFGBG' => '12;8'
+    'COMMAND_MODE' => 'unix2003'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'EDITOR' => 'nvim'
+    'ITERM_PROFILE' => 'jason'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LESS' => '-R'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'MANPATH' => '/usr/local/opt/coreutils/libexec/gnuman:/usr/share/man:/usr/local/share/man:/usr/local/opt/coreutils/libexec/gnuman'
+    'PAGER' => 'less'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SECURITYSESSIONID' => '186a7'
+    'SHLVL' => '3'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.SZOuqjzNy6/Listeners'
+    'TERM' => 'screen-256color'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'TMUX' => '/private/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/tmux-501/default,24366,0'
+    'TMUXPWD_0' => '/Library/WebServer/Documents/skypro/ksbdlyy/ksbdlyy'
+    'TMUXPWD_1' => '/Library/WebServer/Documents/skypro/python/crawl/tutorial'
+    'TMUXPWD_2' => '/Library/WebServer/Documents'
+    'TMUXPWD_3' => '/Library/WebServer/Documents'
+    'TMUXPWD_4' => '/Library/WebServer/Documents'
+    'TMUXPWD_5' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'TMUXPWD_6' => '/Library/WebServer/Documents/skypro/douban_house'
+    'TMUXPWD_7' => '/Library/WebServer/Documents/BabyAssistant-node/baby/baby'
+    'TMUX_PANE' => '%8'
+    'TMUX_PLUGIN_MANAGER_PATH' => '/Users/sky/.tmux/plugins/'
+    'XPC_SERVICE_NAME' => '0'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1461739921.7917
+    'REQUEST_TIME' => 1461739921
+    'argv' => [
+        0 => './yii'
+        1 => 'craw/gateway'
+        2 => 'onetofive'
+    ]
+    'argc' => 3
+]
+2016-04-27 14:52:54 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'console\controllers\Yii' not found' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/console/controllers/CrawController.php:34
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): console\controllers\CrawController->actionGateway()
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction()
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction()
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction()
+#6 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction()
+#7 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest()
+#8 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#9 {main}
+2016-04-27 14:52:54 [-][-][-][info][application] $_SERVER = [
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'AUTOJUMP_SOURCED' => '1'
+    'SHELL' => '/bin/zsh'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'USER' => 'sky'
+    'DOCKER_MACHINE_NAME' => 'default'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'DOCKER_TLS_VERIFY' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'HOME' => '/Users/sky'
+    'ITERM_SESSION_ID' => 'w0t0p1:6BD92C1A-0345-4E5C-9B2D-9BB7AAB76F89'
+    'LOGNAME' => 'sky'
+    'GOPATH' => '/Users/sky/go'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'EVENT_NOKQUEUE' => '1'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.uqDshwbNTC/Render'
+    'COLORFGBG' => '12;8'
+    'COMMAND_MODE' => 'unix2003'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'EDITOR' => 'nvim'
+    'ITERM_PROFILE' => 'jason'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LESS' => '-R'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'MANPATH' => '/usr/local/opt/coreutils/libexec/gnuman:/usr/share/man:/usr/local/share/man:/usr/local/opt/coreutils/libexec/gnuman'
+    'PAGER' => 'less'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SECURITYSESSIONID' => '186a7'
+    'SHLVL' => '3'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.SZOuqjzNy6/Listeners'
+    'TERM' => 'screen-256color'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'TMUX' => '/private/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/tmux-501/default,24366,0'
+    'TMUXPWD_0' => '/Library/WebServer/Documents/skypro/ksbdlyy/ksbdlyy'
+    'TMUXPWD_1' => '/Library/WebServer/Documents/skypro/python/crawl/tutorial'
+    'TMUXPWD_2' => '/Library/WebServer/Documents'
+    'TMUXPWD_3' => '/Library/WebServer/Documents'
+    'TMUXPWD_4' => '/Library/WebServer/Documents'
+    'TMUXPWD_5' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'TMUXPWD_6' => '/Library/WebServer/Documents/skypro/douban_house'
+    'TMUXPWD_7' => '/Library/WebServer/Documents/BabyAssistant-node/baby/baby'
+    'TMUX_PANE' => '%8'
+    'TMUX_PLUGIN_MANAGER_PATH' => '/Users/sky/.tmux/plugins/'
+    'XPC_SERVICE_NAME' => '0'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1461739974.3791
+    'REQUEST_TIME' => 1461739974
+    'argv' => [
+        0 => './yii'
+        1 => 'craw/gateway'
+        2 => 'onetofive'
+    ]
+    'argc' => 3
+]
+2016-04-27 14:55:04 [-][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: craw' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/console/controllers/CrawController.php:34
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): console\controllers\CrawController->actionGateway()
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction()
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction()
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction()
+#6 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction()
+#7 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest()
+#8 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#9 {main}
+2016-04-27 14:55:04 [-][-][-][info][application] $_SERVER = [
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'AUTOJUMP_SOURCED' => '1'
+    'SHELL' => '/bin/zsh'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'USER' => 'sky'
+    'DOCKER_MACHINE_NAME' => 'default'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'DOCKER_TLS_VERIFY' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'HOME' => '/Users/sky'
+    'ITERM_SESSION_ID' => 'w0t0p1:6BD92C1A-0345-4E5C-9B2D-9BB7AAB76F89'
+    'LOGNAME' => 'sky'
+    'GOPATH' => '/Users/sky/go'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'EVENT_NOKQUEUE' => '1'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.uqDshwbNTC/Render'
+    'COLORFGBG' => '12;8'
+    'COMMAND_MODE' => 'unix2003'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'EDITOR' => 'nvim'
+    'ITERM_PROFILE' => 'jason'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LESS' => '-R'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'MANPATH' => '/usr/local/opt/coreutils/libexec/gnuman:/usr/share/man:/usr/local/share/man:/usr/local/opt/coreutils/libexec/gnuman'
+    'PAGER' => 'less'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SECURITYSESSIONID' => '186a7'
+    'SHLVL' => '3'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.SZOuqjzNy6/Listeners'
+    'TERM' => 'screen-256color'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'TMUX' => '/private/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/tmux-501/default,24366,0'
+    'TMUXPWD_0' => '/Library/WebServer/Documents/skypro/ksbdlyy/ksbdlyy'
+    'TMUXPWD_1' => '/Library/WebServer/Documents/skypro/python/crawl/tutorial'
+    'TMUXPWD_2' => '/Library/WebServer/Documents'
+    'TMUXPWD_3' => '/Library/WebServer/Documents'
+    'TMUXPWD_4' => '/Library/WebServer/Documents'
+    'TMUXPWD_5' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'TMUXPWD_6' => '/Library/WebServer/Documents/skypro/douban_house'
+    'TMUXPWD_7' => '/Library/WebServer/Documents/BabyAssistant-node/baby/baby'
+    'TMUX_PANE' => '%8'
+    'TMUX_PLUGIN_MANAGER_PATH' => '/Users/sky/.tmux/plugins/'
+    'XPC_SERVICE_NAME' => '0'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1461740104.0515
+    'REQUEST_TIME' => 1461740104
+    'argv' => [
+        0 => './yii'
+        1 => 'craw/gateway'
+        2 => 'onetofive'
+    ]
+    'argc' => 3
+]
+2016-04-27 14:55:47 [-][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant DEFAULT_TARGET_CHARSET - assumed 'DEFAULT_TARGET_CHARSET'' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/common/lib/helper/ReptileComponents.php:12
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/console/controllers/CrawController.php(19): console\controllers\CrawController->onetofive()
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): console\controllers\CrawController->actionGateway()
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction()
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction()
+#6 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction()
+#7 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction()
+#8 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest()
+#9 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#10 {main}
+2016-04-27 14:55:47 [-][-][-][info][application] $_SERVER = [
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'AUTOJUMP_SOURCED' => '1'
+    'SHELL' => '/bin/zsh'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'USER' => 'sky'
+    'DOCKER_MACHINE_NAME' => 'default'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'DOCKER_TLS_VERIFY' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'HOME' => '/Users/sky'
+    'ITERM_SESSION_ID' => 'w0t0p1:6BD92C1A-0345-4E5C-9B2D-9BB7AAB76F89'
+    'LOGNAME' => 'sky'
+    'GOPATH' => '/Users/sky/go'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'EVENT_NOKQUEUE' => '1'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.uqDshwbNTC/Render'
+    'COLORFGBG' => '12;8'
+    'COMMAND_MODE' => 'unix2003'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'EDITOR' => 'nvim'
+    'ITERM_PROFILE' => 'jason'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LESS' => '-R'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'MANPATH' => '/usr/local/opt/coreutils/libexec/gnuman:/usr/share/man:/usr/local/share/man:/usr/local/opt/coreutils/libexec/gnuman'
+    'PAGER' => 'less'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SECURITYSESSIONID' => '186a7'
+    'SHLVL' => '3'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.SZOuqjzNy6/Listeners'
+    'TERM' => 'screen-256color'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'TMUX' => '/private/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/tmux-501/default,24366,0'
+    'TMUXPWD_0' => '/Library/WebServer/Documents/skypro/ksbdlyy/ksbdlyy'
+    'TMUXPWD_1' => '/Library/WebServer/Documents/skypro/python/crawl/tutorial'
+    'TMUXPWD_2' => '/Library/WebServer/Documents'
+    'TMUXPWD_3' => '/Library/WebServer/Documents'
+    'TMUXPWD_4' => '/Library/WebServer/Documents'
+    'TMUXPWD_5' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'TMUXPWD_6' => '/Library/WebServer/Documents/skypro/douban_house'
+    'TMUXPWD_7' => '/Library/WebServer/Documents/BabyAssistant-node/baby/baby'
+    'TMUX_PANE' => '%8'
+    'TMUX_PLUGIN_MANAGER_PATH' => '/Users/sky/.tmux/plugins/'
+    'XPC_SERVICE_NAME' => '0'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1461740147.9202
+    'REQUEST_TIME' => 1461740147
+    'argv' => [
+        0 => './yii'
+        1 => 'craw/gateway'
+        2 => 'onetofive'
+    ]
+    'argc' => 3
+]
+2016-04-27 14:56:32 [-][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant DEFAULT_TARGET_CHARSET - assumed 'DEFAULT_TARGET_CHARSET'' in /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/common/lib/helper/ReptileComponents.php:12
+Stack trace:
+#0 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/console/controllers/CrawController.php(19): console\controllers\CrawController->onetofive()
+#1 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): console\controllers\CrawController->actionGateway()
+#2 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#3 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#4 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Controller.php(108): yii\base\Controller->runAction()
+#5 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction()
+#6 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction()
+#7 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction()
+#8 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest()
+#9 /Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework/yii(27): yii\base\Application->run()
+#10 {main}
+2016-04-27 14:56:32 [-][-][-][info][application] $_SERVER = [
+    'AUTOJUMP_ERROR_PATH' => '/Users/sky/Library/autojump/errors.log'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'AUTOJUMP_SOURCED' => '1'
+    'SHELL' => '/bin/zsh'
+    'DOCKER_HOST' => 'tcp://10.0.0.100:2376'
+    'OLDPWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'USER' => 'sky'
+    'DOCKER_MACHINE_NAME' => 'default'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'DOCKER_TLS_VERIFY' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin/'
+    'HOMEBREW_GITHUB_API_TOKEN' => '9e33cda51137c07ddee9675ffdeba9ba5ae8595b'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'DOCKER_CERT_PATH' => '/Users/sky/.docker/machine/machines/default'
+    'HOME' => '/Users/sky'
+    'ITERM_SESSION_ID' => 'w0t0p1:6BD92C1A-0345-4E5C-9B2D-9BB7AAB76F89'
+    'LOGNAME' => 'sky'
+    'GOPATH' => '/Users/sky/go'
+    'HISTTIMEFORMAT' => '%d/%m/%y %T '
+    'EVENT_NOKQUEUE' => '1'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.uqDshwbNTC/Render'
+    'COLORFGBG' => '12;8'
+    'COMMAND_MODE' => 'unix2003'
+    'DISABLE_AUTO_TITLE' => 'true'
+    'EDITOR' => 'nvim'
+    'ITERM_PROFILE' => 'jason'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LESS' => '-R'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'MANPATH' => '/usr/local/opt/coreutils/libexec/gnuman:/usr/share/man:/usr/local/share/man:/usr/local/opt/coreutils/libexec/gnuman'
+    'PAGER' => 'less'
+    'PWD' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby/framework'
+    'SECURITYSESSIONID' => '186a7'
+    'SHLVL' => '3'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.SZOuqjzNy6/Listeners'
+    'TERM' => 'screen-256color'
+    'TMPDIR' => '/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/'
+    'TMUX' => '/private/var/folders/wx/52_s7sjs4416vvgs90j8v4zh0000gn/T/tmux-501/default,24366,0'
+    'TMUXPWD_0' => '/Library/WebServer/Documents/skypro/ksbdlyy/ksbdlyy'
+    'TMUXPWD_1' => '/Library/WebServer/Documents/skypro/python/crawl/tutorial'
+    'TMUXPWD_2' => '/Library/WebServer/Documents'
+    'TMUXPWD_3' => '/Library/WebServer/Documents'
+    'TMUXPWD_4' => '/Library/WebServer/Documents'
+    'TMUXPWD_5' => '/Library/WebServer/Documents/skypro/BabyAssistant/BabyAssistant-php-platform/baby'
+    'TMUXPWD_6' => '/Library/WebServer/Documents/skypro/douban_house'
+    'TMUXPWD_7' => '/Library/WebServer/Documents/BabyAssistant-node/baby/baby'
+    'TMUX_PANE' => '%8'
+    'TMUX_PLUGIN_MANAGER_PATH' => '/Users/sky/.tmux/plugins/'
+    'XPC_SERVICE_NAME' => '0'
+    'ZSH' => '/Users/sky/.oh-my-zsh'
+    '_' => '/usr/local/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1461740192.7513
+    'REQUEST_TIME' => 1461740192
+    'argv' => [
+        0 => './yii'
+        1 => 'craw/gateway'
+        2 => 'onetofive'
+    ]
+    'argc' => 3
+]

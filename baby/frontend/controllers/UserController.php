@@ -2,7 +2,7 @@
 namespace frontend\controllers;
 
 use Yii;
-use yii\rest\Controller;
+use yii\web\Controller;
 use frontend\bo\BabyBo;
 use frontend\beans\BabyUserForm;
 use common\lib\helper\SessionHelper;
@@ -26,7 +26,10 @@ class UserController extends Controller{
         // $customer->insert();
         $babyBo = new BabyBo();
         $babyFormToken = $babyBo->generateToken();
-        $this->renderView('home', $babyFormToken);
+        return $this->render('renderer', [
+            'order' => 1111,
+        ]);
+        // $this->renderView('home', $babyFormToken);
     }
 
     public function actionInfo(){
